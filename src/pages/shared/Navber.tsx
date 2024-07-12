@@ -12,6 +12,7 @@ import {
 const Navber: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [ isShow, setIsShow] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,9 +62,11 @@ const Navber: React.FC = () => {
                 <input
                   type="text"
                   placeholder="Search..."
-                  className="rounded-full px-4 py-2 p-3 bg-gray-800 text-white placeholder-gray-400 focus:outline-none w-full lg:w-80"
+                  className="rounded-full w-28 px-4 py-2 p-3 bg-gray-800 text-white placeholder-gray-400 focus:outline-none lg:w-80"
                 />
-                <FaSearch className="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-400" />
+                <button onClick={() => setIsShow(!isShow)}>
+                  <FaSearch className="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-400" />
+                </button>
               </div>
             </div>
 
@@ -94,26 +97,49 @@ const Navber: React.FC = () => {
         className={`${isMenuOpen ? "block" : "hidden"} lg:hidden bg-white p-4`}
       >
         <div className="flex flex-col items-start text-black text-lg font-serif ">
-          <Link className="hover:underline cursor-pointer py-2 w-full border-b-2" to="">
+          <Link
+            className="hover:underline cursor-pointer py-2 w-full border-b-2"
+            to=""
+          >
             CARDIO
           </Link>
-          <Link className="hover:underline cursor-pointer py-2 w-full border-b-2" to="">
+          <Link
+            className="hover:underline cursor-pointer py-2 w-full border-b-2"
+            to=""
+          >
             STRENGTH
           </Link>
-          <Link className="hover:underline cursor-pointer py-2 w-full border-b-2" to="">
+          <Link
+            className="hover:underline cursor-pointer py-2 w-full border-b-2"
+            to=""
+          >
             ACCESSORIES
           </Link>
-          <Link className="hover:underline cursor-pointer py-2 w-full border-b-2" to="">
+          <Link
+            className="hover:underline cursor-pointer py-2 w-full border-b-2"
+            to=""
+          >
             OUTLET
           </Link>
-          <Link className="hover:underline cursor-pointer py-2 w-full border-b-2" to="">
+          <Link
+            className="hover:underline cursor-pointer py-2 w-full border-b-2"
+            to=""
+          >
             TOOLS
           </Link>
-          <Link className="hover:underline cursor-pointer py-2 w-full border-b-2" to="">
+          <Link
+            className="hover:underline cursor-pointer py-2 w-full border-b-2"
+            to=""
+          >
             FOR FACILITY
           </Link>
-          <Link to='' className="relative cursor-pointer flex border-b-2 gap-2 items-center hover:border p-2 rounded-full">
-            <p className="text-lg"><FaShoppingBag /></p>
+          <Link
+            to=""
+            className="relative cursor-pointer flex border-b-2 gap-2 items-center hover:border p-2 rounded-full"
+          >
+            <p className="text-lg">
+              <FaShoppingBag />
+            </p>
             <h1 className="font-serif text-base">Fast Shipping</h1>
           </Link>
         </div>
@@ -146,8 +172,13 @@ const Navber: React.FC = () => {
           </Link>
         </div>
         <div className="flex items-center mt-2 md:mt-0 gap-10 text-white p-4">
-          <Link to='' className="relative cursor-pointer flex gap-2 items-center hover:border p-2 rounded-full">
-            <p className="text-lg"><FaShoppingBag /></p>
+          <Link
+            to=""
+            className="relative cursor-pointer flex gap-2 items-center hover:border p-2 rounded-full"
+          >
+            <p className="text-lg">
+              <FaShoppingBag />
+            </p>
             <h1 className="font-serif text-base">Fast Shipping</h1>
           </Link>
         </div>
