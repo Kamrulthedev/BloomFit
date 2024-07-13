@@ -4,10 +4,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const Bannar = () => {
   return (
     <div className="relative w-full">
-      {/* flex flex-col justify-center items-center */}
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10">
         {/* utils */}
-        <div className="lg:mt-52 md:mt-32 mt-24 ml-20 shadow-lg">
+        <div className="lg:mt-52 md:mt-32 mt-24 ml-20">
           <h1 className="text-white text-xs md:text-sm lg:text-base font-bold">
             BRING THE CLUB EXPERIENCE HOME
           </h1>
@@ -20,13 +19,7 @@ const Bannar = () => {
         </div>
       </div>
 
-      <Carousel
-        className="w-full h-[300px] md:h-[400px] lg:h-[700px]"
-        autoplay
-        // infiniteLoop
-        // showThumbs={false}
-        // showStatus={false}
-      >
+      <Carousel className="w-full h-[300px] md:h-[400px] lg:h-[700px]" autoplay>
         <div>
           <img
             className="w-full h-[300px] md:h-[400px] lg:h-[700px]"

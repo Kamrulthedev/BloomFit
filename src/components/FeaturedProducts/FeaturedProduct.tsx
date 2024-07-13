@@ -1,42 +1,10 @@
-import { Carousel } from "antd";
-import { Link, useNavigate } from "react-router-dom";
-
-const featuredProducts = [
-  {
-    id: 1,
-    name: "Treadmill",
-    image:
-      "https://i.ibb.co/qyKwgfP/shirtless-bodybuilder-doing-side-plank-exercise-7502-4749.jpg",
-    description: "High-quality treadmill for your cardio workouts.",
-  },
-  {
-    id: 2,
-    name: "Dumbbell Set",
-    image: "https://i.ibb.co/BzkcYbW/couple-training-together-gym.jpg",
-    description: "Complete set of dumbbells for strength training.",
-  },
-  {
-    id: 3,
-    name: "Yoga Mat",
-    image: "https://i.ibb.co/zbNBqKG/muscular-man-doing-push-ups-one-hand.jpg",
-    description: "Comfortable yoga mat for all types of exercises.",
-  },
-];
+import { Link } from "react-router-dom";
 
 const FeaturedProduct = () => {
-  const navigate = useNavigate();
-
-  const handleViewDetails = (id: any) => {
-    navigate(`/product/${id}`);
-  };
-
-  const handleExploreMore = () => {
-    navigate("/products");
-  };
   return (
     <div className="relative w-full h-[300px] lg:h-[500px] mb-10">
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 z-10 flex justify-end ">
-        <div className=" lg:w-[400px] lg:h-[360px] w-full h-[100px] bg-white my-28 mx-20 space-y-5">
+        <div className=" lg:w-[400px] lg:h-[360px] w-full h-[100px] bg-green-100 rounded my-28 mx-20 space-y-5">
           <p className="text-base font-serif text-center lg:mt-16">
             COMPLIMENTARY
           </p>

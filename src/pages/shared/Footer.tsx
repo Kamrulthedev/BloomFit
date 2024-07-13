@@ -5,7 +5,7 @@ import { LuInstagram } from "react-icons/lu";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const [currentDateTime, setCurrentDateTime] = useState(new Date());
+  const [currentDateTime] = useState(new Date());
   const year = currentDateTime.getFullYear();
   return (
     <div className="bg-gray-900 text-gray-400  lg:h-[500px] ">
