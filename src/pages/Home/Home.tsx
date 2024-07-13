@@ -1,4 +1,4 @@
-import Bannar from "../Hero/Bannar";
+import Bannar from "@/components/Hero/Bannar";
 
 
 const Home = () => {
