@@ -15,11 +15,11 @@ const images1 = [
 
 const ImageGallery = () => {
   return (
-    <div className="image-gallery p-8 bg-gray-100">
+    <div className="image-gallery p-8 bg-gray-100 md:h-[300px]">
       <h2 className="lg:text-3xl font-serif text-center mb-8 uppercase">
         Gallery
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 h-96 mb-2">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:h-96 mb-2">
         {images1.slice(0, 3).map((image, index) => (
           <div key={index} className="relative overflow-hidden">
             <img

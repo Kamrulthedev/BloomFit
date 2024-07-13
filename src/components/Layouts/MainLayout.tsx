@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
     return (
-        <div className="bg-stone-200">
+        <div className="bg-stone-100">
             <Navber></Navber>
             <Outlet></Outlet>
             <Footer></Footer>

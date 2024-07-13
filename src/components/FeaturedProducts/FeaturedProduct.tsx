@@ -30,7 +30,7 @@ const FeaturedProduct = () => {
         <div>
           <img
             className="w-full h-[300px] lg:h-[500px]"
-            src="https://i.ibb.co/PjWCwQ4/3d-gym-equipment-23-2151114250.jpg"
+            src="https://i.ibb.co/XsdDx5c/Screenshot-2024-07-13-151908.png"
             alt="Shirtless bodybuilder doing side plank exercise"
           />
         </div>
