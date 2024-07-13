@@ -46,21 +46,23 @@ const Categorie = () => {
   };
 
   return (
-    <div className="categories-section py-16 px-8 grid grid-cols-2 lg:grid-cols-4 gap-6 ">
-      {categories?.slice(0, 4).map((category) => (
-        <button
-          key={category.name}
-          onClick={() => handleCategoryClick(category.route)}
-        >
-          <img loading="lazy"
-            src={category.image}
-            alt={category.name}
-            className="w-72 hover:p-2 h-52 lg:h-72 object-cover  rounded-lg mb-2"
-          />
-          <p className="flex justify-start text-2xl font-serif uppercase">{category.name}</p>
-        </button>
-      ))}
-    </div>
+    <div className="categories-section py-16 px-4 md:px-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+    {categories?.slice(0, 4).map((category) => (
+      <button
+        key={category.name}
+        onClick={() => handleCategoryClick(category.route)}
+        className="flex flex-col items-center"
+      >
+        <img
+          loading="lazy"
+          src={category.image}
+          alt={category.name}
+          className="w-full h-32 sm:h-48 md:h-52 lg:h-72 object-cover rounded-lg mb-2 transition-transform hover:scale-x-110"
+        />
+        <p className="text-lg sm:text-xl md:text-2xl font-serif uppercase">{category.name}</p>
+      </button>
+    ))}
+  </div>
   );
 };
 

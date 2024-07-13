@@ -32,7 +32,7 @@ const Benefit = () => {
               loading="lazy"
               src={benefit.image}
               alt={benefit.title}
-              className="w-1/2 h-full object-cover  mb-4"
+              className="w-1/2 h-full object-cover  mb-4 hover:scale-x-110 transition-transform"
             />
             <div className="w-1/2 p-5 space-y-3">
               <h3 className="text-xl font-bold">{benefit.title}</h3>

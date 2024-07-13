@@ -37,7 +37,7 @@ const ImageGallery = () => {
             <img
               src={image}
               alt={`Gallery Image ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-x-110 transition-transform"
               loading="lazy"
             />
           </div>
@@ -49,7 +49,7 @@ const ImageGallery = () => {
             <img
               src={image}
               alt={`Gallery Image ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-x-105 transition-transform"
               loading="lazy"
             />
           </div>
