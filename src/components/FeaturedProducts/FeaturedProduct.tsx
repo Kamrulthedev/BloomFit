@@ -3,22 +3,23 @@ import { Link } from "react-router-dom";
 const FeaturedProduct = () => {
   return (
     <div className="relative w-full h-[300px] lg:h-[500px]">
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 z-10 flex justify-end p-7">
-        <div className=" lg:w-[400px] lg:h-[360px] w-full h-[100px] bg-green-100 rounded my-12 mx-10 p-2 space-y-3">
-          <p className="text-base font-serif text-center mt-12 lg:mt-20">
+
+      <div className="absolute top-0 left-0 w-full lg:h-full bg-black bg-opacity-20 z-10 flex justify-end p-7">
+        <div className=" lg:w-[400px] lg:h-[360px] w-[200px] h-[180px] bg-green-100  rounded my-6 lg:my-12 mx-5 lg:mx-10 p-1 lg:p-2 space-y-3">
+          <p className="lg:text-base text-xs  font-serif text-center mt-8 lg:mt-20">
             COMPLIMENTARY
           </p>
-          <h1 className="lg:text-2xl text-xl text-center text-black font-bold">
+          <h1 className="lg:text-2xl text-sm text-center text-black font-bold">
             CUSTOM HOME GYM DESIGN
           </h1>
-          <p className="text-center font-serif text-xs lg:text-sm p-4">
+          <p className="text-center font-serif text-[8px] lg:text-sm lg:p-4 max-h-full">
             From $10,000 efficient spaces, to $150,000 dream gyms, we can help
             you build the perfect fitness space for your home.
           </p>
           <div className="flex justify-center">
             <Link
               to="/"
-              className="bg-green-500 p-4 rounded-sm text-xl font-serif"
+              className="bg-green-500 p-1 lg:p-4 rounded-sm lg:text-xl font-serif"
             >
               LEARN MORE
             </Link>
