@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import {
   FaBars,
   FaSearch,
-  FaShoppingBag,
   FaShoppingCart,
   FaTimes,
   FaUser,
@@ -104,7 +103,7 @@ const Navber: React.FC = () => {
             className="hover:underline cursor-pointer py-2 w-full border-b-2"
             to=""
           >
-            CARDIO
+            SHOP ALL
           </Link>
           <Link
             className="hover:underline cursor-pointer py-2 w-full border-b-2"
@@ -155,22 +154,40 @@ const Navber: React.FC = () => {
         }`}
       >
         <div className="items-center p-6 text-white flex md:space-x-6 text-lg font-serif">
-          <Link className="hover:underline cursor-pointer" to="">
-            CARDIO
+          <Link
+            className="hover:underline hover:transition-transform hover:scale-x-110 cursor-pointer"
+            to=""
+          >
+            SHOP ALL
           </Link>
-          <Link className="hover:underline cursor-pointer" to="">
+          <Link
+            className="hover:underline hover:transition-transform hover:scale-x-110  cursor-pointer"
+            to=""
+          >
             STRENGTH
           </Link>
-          <Link className="hover:underline cursor-pointer" to="">
+          <Link
+            className="hover:underline hover:transition-transform hover:scale-x-110  cursor-pointer"
+            to=""
+          >
             ACCESSORIES
           </Link>
-          <Link className="hover:underline cursor-pointer" to="">
+          <Link
+            className="hover:underline hover:transition-transform hover:scale-x-110  cursor-pointer"
+            to=""
+          >
             OUTLET
           </Link>
-          <Link className="hover:underline cursor-pointer" to="">
+          <Link
+            className="hover:underline hover:transition-transform hover:scale-x-110  cursor-pointer"
+            to=""
+          >
             TOOLS
           </Link>
-          <Link className="hover:underline cursor-pointer" to="">
+          <Link
+            className="hover:underline hover:transition-transform hover:scale-x-110  cursor-pointer"
+            to=""
+          >
             FOR FACILITY
           </Link>
         </div>
@@ -180,7 +197,7 @@ const Navber: React.FC = () => {
             className="relative cursor-pointer flex gap-2 items-center hover:border p-2 rounded-full"
           >
             <p className="text-lg">
-            <LuBus className="text-xl font-bold" />
+              <LuBus className="text-xl font-bold" />
             </p>
             <h1 className="font-serif text-base">Fast Shipping</h1>
           </Link>
