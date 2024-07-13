@@ -1,3 +1,5 @@
+
+
 const images = [
   "https://i.ibb.co/qyKwgfP/shirtless-bodybuilder-doing-side-plank-exercise-7502-4749.jpg",
   "https://i.ibb.co/BzkcYbW/couple-training-together-gym.jpg",
@@ -9,9 +11,20 @@ const ImageGallery = () => {
   return (
     <div className="image-gallery p-8 bg-gray-100">
       <h2 className="lg:text-3xl font-serif text-center mb-8 uppercase">Gallery</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 h-96 mb-2">
+        {images.slice(0,2).map((image, index) => (
+          <div key={index} className="relative overflow-hidden">
+            <img
+              src={image}
+              alt={`Gallery Image ${index + 1}`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
         {images.map((image, index) => (
-          <div key={index} className="relative overflow-hidden rounded-lg">
+          <div key={index} className="relative overflow-hidden">
             <img
               src={image}
               alt={`Gallery Image ${index + 1}`}
