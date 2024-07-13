@@ -8,12 +8,13 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh'] ,
   rules: {
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
-      "https://typescript-eslint.io/rules/no-explicit-any"
+      "https://typescript-eslint.io/rules/no-explicit-any", require('daisyui'),
     ],
+    
   },
 }
