@@ -4,7 +4,7 @@ const FeaturedProduct = () => {
   return (
     <div className="relative w-full h-[300px] lg:h-[500px]">
 
-      <div className="absolute top-0 left-0 w-full lg:h-full bg-black bg-opacity-20 z-10 flex justify-end p-7">
+      <div className="absolute top-0 left-0 w-full lg:h-full bg-black bg-opacity-5 z-10 flex justify-end p-7">
         <div className=" lg:w-[400px] lg:h-[360px] w-[200px] h-[180px] bg-green-100  rounded my-6 lg:my-12 mx-5 lg:mx-10 p-1 lg:p-2 space-y-3">
           <p className="lg:text-base text-xs  font-serif text-center mt-8 lg:mt-20">
             COMPLIMENTARY
@@ -30,8 +30,8 @@ const FeaturedProduct = () => {
       <div className=" mb-20">
         <div>
           <img
-            className="w-full h-[300px] lg:h-[500px]"
-            src="https://i.ibb.co/XsdDx5c/Screenshot-2024-07-13-151908.png"
+            className="w-full h-[300px] lg:h-[500px] object-cover"
+            src="https://i.ibb.co/C7tvvRr/Screenshot-2024-07-13-171833.png"
             alt="Shirtless bodybuilder doing side plank exercise"
           />
         </div>
