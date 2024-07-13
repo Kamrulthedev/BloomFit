@@ -3,20 +3,22 @@ const benefits = [
     id: 1,
     title: "High Quality",
     description:
-      "Our products are crafted from the highest quality materials, ensuring exceptional durability and longevity. We meticulously select premium components and employ state-of-the-art manufacturing processes to guarantee that every item meets our rigorous standards. From the initial design phase to the final inspection, we focus on every detail to deliver products that not only meet but exceed customer expectations.",
+      "Our products are crafted from the highest quality materials, ensuring exceptional durability and longevity. We meticulously select premium components and employ state-of-the-art manufacturing processes to guarantee that every item meets our rigorous standards. From the initial design phase to the final inspection.",
     image:
       "https://i.ibb.co/6PQ2d4Y/artistic-portrait-shirtless-muscular-male-with-burning-dumbbell.jpg",
   },
   {
     id: 2,
     title: "Customer Satisfaction Guarantee",
-    description: "Your satisfaction is our top priority. We stand behind our products and services with a satisfaction guarantee. If for any reason you are not completely satisfied with your purchase, our customer support team will work diligently to resolve any issues to your satisfaction. Your happiness and loyalty are what drive us to excel every day.",
-    image: "https://i.ibb.co/wQ3HzBk/front-view-fit-man-posing-while-lifting-tank-top.jpg",
-  }
+    description:
+      "Your satisfaction is our top priority. We stand behind our products and services with a satisfaction guarantee. If for any reason you are not completely satisfied with your purchase, our customer support team will work diligently to resolve any issues to your satisfaction.",
+    image:
+      "https://i.ibb.co/wQ3HzBk/front-view-fit-man-posing-while-lifting-tank-top.jpg",
+  },
 ];
 const Benefit = () => {
   return (
-    <div className="benefits-section p-8 bg-gray-100">
+    <div className="benefits-section p-8 bg-gray-100 ">
       <h2 className="lg:text-4xl font-serif text-center mb-8 uppercase">
         Benefits
       </h2>
@@ -33,7 +35,8 @@ const Benefit = () => {
             />
             <div className="w-1/2 p-5 space-y-3">
               <h3 className="text-xl font-bold">{benefit.title}</h3>
-              <p className="text-gray-600">{benefit.description}</p>
+              <p className="text-gray-600 h-full max-h-64 overflow-y-auto">{benefit.description}</p>
+              
             </div>
           </div>
         ))}

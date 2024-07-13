@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Comitment = () => {
   return (
-    <div className="lg:p-16">
-      <div className="w-full flex lg:flex gap-5 mb-10">
-        <div className="w-1/2 text-center space-y-4">
+    <div className="p-10 lg:p-16">
+      <div className="w-full flex lg:flex gap-5 mb-5 lg:mb-10">
+        <div className="lg:w-1/2 text-center space-y-4">
           <div className="flex justify-center">
             <AiFillLike className="text-2xl" />
           </div>
