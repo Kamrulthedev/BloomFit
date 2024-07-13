@@ -22,28 +22,28 @@ const Bannar = () => {
       <Carousel className="w-full h-[300px] md:h-[400px] lg:h-[700px]" autoplay>
         <div>
           <img
-            className="w-full h-[300px] md:h-[400px] lg:h-[700px]"
+            className="w-full h-[300px] md:h-[400px] lg:h-[700px] object-cover"
             src="https://i.ibb.co/M9CxVFX/Screenshot-2024-07-13-144418.png"
             alt="Shirtless bodybuilder doing side plank exercise"
           />
         </div>
         <div>
           <img
-            className="w-full h-[300px] md:h-[400px] lg:h-[700px]"
+            className="w-full h-[300px] md:h-[400px] lg:h-[700px] object-cover"
             src="https://i.ibb.co/34hYMY1/Screenshot-2024-07-13-144443.png"
             alt="Couple training together in gym"
           />
         </div>
         <div>
           <img
-            className="w-full h-[300px] md:h-[400px] lg:h-[700px]"
+            className="w-full h-[300px] md:h-[400px] lg:h-[700px] object-cover"
             src="https://i.ibb.co/4gGRwjX/Screenshot-2024-07-13-144047.png"
             alt="Muscular man doing push-ups with one hand"
           />
         </div>
         <div>
           <img
-            className="w-full h-[300px] md:h-[400px] lg:h-[700px]"
+            className="w-full h-[300px] md:h-[400px] lg:h-[700px] object-cover"
             src="https://i.ibb.co/LhLsgBD/Screenshot-2024-07-13-144537.png"
             alt="Young healthy man athlete doing exercise with ropes in gym"
           />
