@@ -5,7 +5,7 @@ const benefits = [
     description:
       "Our products are crafted from the highest quality materials, ensuring exceptional durability and longevity. We meticulously select premium components and employ state-of-the-art manufacturing processes to guarantee that every item meets our rigorous standards. From the initial design phase.",
     image:
-      "https://i.ibb.co/6PQ2d4Y/artistic-portrait-shirtless-muscular-male-with-burning-dumbbell.jpg",
+      "https://i.ibb.co/D82bSWx/Screenshot-2024-07-13-201748.png",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const benefits = [
     description:
       "Your satisfaction is our top priority. We stand behind our products and services with a satisfaction guarantee. If for any reason you are not completely satisfied with your purchase, our customer support team will work diligently to resolve any issues to your satisfaction.",
     image:
-      "https://i.ibb.co/wQ3HzBk/front-view-fit-man-posing-while-lifting-tank-top.jpg",
+      "https://i.ibb.co/wRKxWbt/front-view-fit-man-posing-while-lifting-tank-top.jpg",
   },
 ];
 const Benefit = () => {

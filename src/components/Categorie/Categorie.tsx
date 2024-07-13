@@ -4,25 +4,24 @@ const categories = [
   {
     name: "Cardio",
     image:
-      "https://i.ibb.co/nRBv8dD/young-woman-doing-fitness-sportswear.jpg",
+      "https://i.ibb.co/dM27WLh/studio-portrait-bearded-brutal-male-isolated-gray-background.jpg",
     route: "/products?category=cardio",
   },
   {
     name: "Strength",
     image:
-      "https://i.ibb.co/KG5pxx4/studio-portrait-bearded-brutal-male-isolated-gray-background.jpg",
+      "https://i.ibb.co/zNjnkwg/young-woman-doing-fitness-sportswear.jpg",
     route: "/products?category=strength",
   },
   {
     name: "Accessories",
     image:
-      "https://i.ibb.co/MNkXMj1/powerful-stylish-bodybuilder-with-tattoo-his-arm-doing-exercises-with-dumbbells-isolated-dark-backgr.jpg",
-    route: "/products?category=accessories",
+      "https://i.ibb.co/0tV7mds/Screenshot-2024-07-13-200749.png",
   },
   {
     name: "Outlet",
     image:
-      "https://i.ibb.co/T1wp3qt/female-athlete-exercising-with-kettlebell-798657-9840.jpg",
+      "https://i.ibb.co/VWpvfKJ/yy.png",
     route: "/products?category=outlet",
   },
   {
