@@ -22,7 +22,7 @@ const ImageGallery = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-4 mb-4">
       {images1.slice(0, 3).map((image, index) => (
         <div key={index} className="relative overflow-hidden h-48 lg:h-96">
-          <img
+          <img loading="lazy"
             src={image}
             alt={`Gallery Image ${index + 1}`}
             className="w-full h-full object-cover"
@@ -33,7 +33,7 @@ const ImageGallery = () => {
     <div className="grid md:grid-cols-4 sm:grid-cols-4 lg:grid-cols-5 gap-2 lg:gap-4">
       {images.map((image, index) => (
         <div key={index} className="relative overflow-hidden h-32 sm:h-48 lg:h-60">
-          <img
+          <img loading="lazy"
             src={image}
             alt={`Gallery Image ${index + 1}`}
             className="w-full h-full object-cover"

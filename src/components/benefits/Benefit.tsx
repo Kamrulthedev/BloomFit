@@ -29,14 +29,16 @@ const Benefit = () => {
             className="benefit-card border rounded-lg h-96 shadow-lg bg-white flex gap-3"
           >
             <img
+              loading="lazy"
               src={benefit.image}
               alt={benefit.title}
               className="w-1/2 h-full object-cover  mb-4"
             />
             <div className="w-1/2 p-5 space-y-3">
               <h3 className="text-xl font-bold">{benefit.title}</h3>
-              <p className="text-gray-600 h-full max-h-64 overflow-y-auto">{benefit.description}</p>
-              
+              <p className="text-gray-600 h-full max-h-64 overflow-y-auto">
+                {benefit.description}
+              </p>
             </div>
           </div>
         ))}

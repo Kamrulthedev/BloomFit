@@ -53,7 +53,7 @@ const Categorie = () => {
           key={category.name}
           onClick={() => handleCategoryClick(category.route)}
         >
-          <img
+          <img loading="lazy"
             src={category.image}
             alt={category.name}
             className="w-72 hover:p-2 h-52 lg:h-72 object-cover  rounded-lg mb-2"
