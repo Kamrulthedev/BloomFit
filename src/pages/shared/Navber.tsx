@@ -72,7 +72,7 @@ const Navber: React.FC = () => {
 
             <button>
               <Link
-                className="border font-bold border-2 p-2 rounded-2xl flex hover:bg-slate-600 text-white items-center gap-1"
+                className="border hover:text-black font-bold border-2 p-2 rounded-2xl flex hover:bg-slate-100 text-white items-center gap-1"
                 to=""
               >
                 <FaUser />
