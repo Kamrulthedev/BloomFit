@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const FeaturedProduct = () => {
   return (
-    <div className="relative w-full h-[300px] lg:h-[500px] mb-10">
+    <div className="relative w-full h-[300px] lg:h-[500px]">
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 z-10 flex justify-end ">
         <div className=" lg:w-[400px] lg:h-[360px] w-full h-[100px] bg-green-100 rounded my-28 mx-20 space-y-5">
           <p className="text-base font-serif text-center lg:mt-16">
@@ -17,7 +17,7 @@ const FeaturedProduct = () => {
           </p>
           <div className="flex justify-center">
             <Link
-              to=""
+              to="/"
               className="bg-green-500 p-4 rounded-sm text-xl font-serif"
             >
               LEARN MORE
