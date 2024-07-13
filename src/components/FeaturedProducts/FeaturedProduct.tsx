@@ -36,8 +36,8 @@ const FeaturedProduct = () => {
   return (
     <div className="relative w-full h-[300px] lg:h-[500px] mb-10">
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 z-10 flex justify-end ">
-        <div className=" lg:w-[400px] lg:h-[360px] w-full h-[100px] bg-white my-28 mx-20">
-          <p className="text-base font-serif text-center lg:mt-20">
+        <div className=" lg:w-[400px] lg:h-[360px] w-full h-[100px] bg-white my-28 mx-20 space-y-5">
+          <p className="text-base font-serif text-center lg:mt-16">
             COMPLIMENTARY
           </p>
           <h1 className="lg:text-2xl text-xl text-center text-black font-bold">
@@ -50,7 +50,7 @@ const FeaturedProduct = () => {
           <div className="flex justify-center">
             <Link
               to=""
-              className="bg-fuchsia-500 p-4 rounded-sm text-xl font-serif"
+              className="bg-green-500 p-4 rounded-sm text-xl font-serif"
             >
               LEARN MORE
             </Link>

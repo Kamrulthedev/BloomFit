@@ -33,7 +33,7 @@ const Navber: React.FC = () => {
     <nav>
       {/* scroll down navber */}
       <div
-        className={`text-white text-sm bg-fuchsia-700 text-center font-serif hidden md:block p-3 ${
+        className={`text-white text-sm bg-green-700 text-center font-serif hidden md:block p-3 ${
           isScrolled ? "hidden" : "block"
         }`}
       >
