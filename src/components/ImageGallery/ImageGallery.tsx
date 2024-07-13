@@ -29,11 +29,11 @@ const ImageGallery = () => {
     setVisible(true);
   }, []);
   return (
-    <animated.div style={props} className="image-gallery p-8 bg-gray-100 md:h-[750px]">
+    <animated.div style={props} className="image-gallery p-8 bg-gray-100">
       <h2 className="lg:text-3xl font-serif text-center mb-8 uppercase">Gallery</h2>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:h-96 mb-2">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:h-64 lg:h-96 mb-2">
         {images1.slice(0, 3).map((image, index) => (
-          <div key={index} className="relative overflow-hidden">
+          <div key={index} className="relative md:overflow-auto lg:overflow-hidden">
             <img
               src={image}
               alt={`Gallery Image ${index + 1}`}
@@ -43,7 +43,7 @@ const ImageGallery = () => {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-5 gap-2">
+      <div className="grid md:grid-cols-4 sm:grid-cols-2 lg:grid-cols-5 gap-2 md:h-48 lg:h-72">
         {images.map((image, index) => (
           <div key={index} className="relative overflow-hidden">
             <img

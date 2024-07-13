@@ -8,11 +8,12 @@ import {
   FaTimes,
   FaUser,
 } from "react-icons/fa";
+import { LuBus } from "react-icons/lu";
 
 const Navber: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [ isShow, setIsShow] = useState(true);
+  const [isShow, setIsShow] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,28 +52,30 @@ const Navber: React.FC = () => {
             </button>
 
             <div className="text-white font-bold text-xl ml-4 lg:ml-0">
-             <Link to='/' className="uppercase font-serif  lg:text-3xl p-3">BloomFit</Link>
+              <Link to="/" className="uppercase font-serif  lg:text-3xl p-3">
+                BloomFit
+              </Link>
             </div>
           </div>
 
           <div className="flex items-center gap-4">
             {/* Search Bar */}
-            <div className="mt-4 lg:mt-0 hover:border hover:border-2 hover:rounded-full">
-              <div className="relative w-full lg:w-80">
+            <div className="mt-4 lg:mt-0 hover:border-2 hover:rounded-full ">
+              <div className="relative w-full lg:w-80 ">
                 <input
                   type="text"
                   placeholder="Search..."
-                  className="rounded-full w-28 px-4 py-2 p-3 bg-gray-800 text-white placeholder-gray-400 focus:outline-none lg:w-80"
+                  className="rounded-full w-20 px-4 py-2 p-3 bg-gray-800 text-white placeholder-gray-400 focus:outline-none lg:w-80"
                 />
                 <button onClick={() => setIsShow(!isShow)}>
-                  <FaSearch className="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-400" />
+                  <FaSearch className="absolute top-1/2 right-3 hidden sm:block md:block transform -translate-y-1/2 text-gray-400" />
                 </button>
               </div>
             </div>
 
             <button>
               <Link
-                className="border hover:text-black font-bold border-2 p-2 rounded-2xl flex hover:bg-slate-100 text-white items-center gap-1"
+                className=" hover:text-black font-bold border-2 p-2 rounded-2xl flex hover:bg-slate-100 text-white items-center gap-1"
                 to=""
               >
                 <FaUser />
@@ -81,7 +84,7 @@ const Navber: React.FC = () => {
             </button>
             <button>
               <Link
-                className="border font-bold border-2 p-2 rounded-2xl flex hover:bg-slate-300 bg-white text-black items-center gap-1"
+                className=" font-bold border-2 p-2 rounded-2xl flex hover:bg-slate-300 bg-white text-black items-center gap-1"
                 to=""
               >
                 <FaShoppingCart />
@@ -138,7 +141,7 @@ const Navber: React.FC = () => {
             className="relative cursor-pointer flex border-b-2 gap-2 items-center hover:border p-2 rounded-full"
           >
             <p className="text-lg">
-              <FaShoppingBag />
+              <LuBus />
             </p>
             <h1 className="font-serif text-base">Fast Shipping</h1>
           </Link>
@@ -177,7 +180,7 @@ const Navber: React.FC = () => {
             className="relative cursor-pointer flex gap-2 items-center hover:border p-2 rounded-full"
           >
             <p className="text-lg">
-              <FaShoppingBag />
+            <LuBus className="text-xl font-bold" />
             </p>
             <h1 className="font-serif text-base">Fast Shipping</h1>
           </Link>
