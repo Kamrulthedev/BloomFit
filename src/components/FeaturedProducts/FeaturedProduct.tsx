@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 const FeaturedProduct = () => {
   return (
     <div className="relative w-full h-[300px] lg:h-[500px]">
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 z-10 flex justify-end ">
-        <div className=" lg:w-[400px] lg:h-[360px] w-full h-[100px] bg-green-100 rounded my-28 mx-20 space-y-5">
-          <p className="text-base font-serif text-center lg:mt-16">
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 z-10 flex justify-end p-7">
+        <div className=" lg:w-[400px] lg:h-[360px] w-full h-[100px] bg-green-100 rounded my-12 mx-10 p-2 space-y-3">
+          <p className="text-base font-serif text-center mt-12 lg:mt-20">
             COMPLIMENTARY
           </p>
           <h1 className="lg:text-2xl text-xl text-center text-black font-bold">
             CUSTOM HOME GYM DESIGN
           </h1>
-          <p className="text-center font-serif text-xs lg:text-base p-4">
+          <p className="text-center font-serif text-xs lg:text-sm p-4">
             From $10,000 efficient spaces, to $150,000 dream gyms, we can help
             you build the perfect fitness space for your home.
           </p>
