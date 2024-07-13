@@ -7,18 +7,17 @@ const Bannar = () => {
       {/* flex flex-col justify-center items-center */}
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10">
         {/* utils */}
-        <div className="lg:mt-72 ml-20 shadow-lg">
+        <div className="lg:mt-52 md:mt-32 mt-24 ml-20 shadow-lg">
           <h1 className="text-white text-xs md:text-sm lg:text-base font-bold">
             BRING THE CLUB EXPERIENCE HOME
           </h1>
           <h2 className="text-white text-xl md:text-3xl lg:text-6xl font-serif mt-4">
             CLUB SERIES+ <br /> CARDIO EQUIPMENT
           </h2>
-          <button className="mt-6 bg-white text-black font-bold py-2 px-4 rounded">
+          <button className="mt-6 bg-white text-black font-serif py-2 px-4">
             SHOP NOW
           </button>
         </div>
-        
       </div>
 
       <Carousel
