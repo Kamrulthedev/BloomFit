@@ -42,7 +42,7 @@ const categories = [
 const Categorie = () => {
   const navigate = useNavigate();
 
-  const handleCategoryClick = (route) => {
+  const handleCategoryClick = (route : any) => {
     navigate(route);
   };
 
