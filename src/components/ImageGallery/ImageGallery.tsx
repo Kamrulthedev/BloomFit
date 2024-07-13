@@ -15,33 +15,33 @@ const images1 = [
 
 const ImageGallery = () => {
   return (
-    <div className="image-gallery p-8 bg-gray-100 md:h-[750px]">
-      <h2 className="lg:text-3xl font-serif text-center mb-8 uppercase">
-        Gallery
-      </h2>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:h-96 mb-2">
-        {images1.slice(0, 3).map((image, index) => (
-          <div key={index} className="relative overflow-hidden">
-            <img
-              src={image}
-              alt={`Gallery Image ${index + 1}`}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
-      <div className="grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-5 gap-2">
-        {images.map((image, index) => (
-          <div key={index} className="relative overflow-hidden">
-            <img
-              src={image}
-              alt={`Gallery Image ${index + 1}`}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
+    <div className="image-gallery p-4 sm:p-8 bg-gray-100">
+    <h2 className="text-xl lg:text-3xl font-serif text-center mb-4 lg:mb-8 uppercase">
+      Gallery
+    </h2>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-4 mb-4">
+      {images1.slice(0, 3).map((image, index) => (
+        <div key={index} className="relative overflow-hidden h-48 lg:h-96">
+          <img
+            src={image}
+            alt={`Gallery Image ${index + 1}`}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      ))}
     </div>
+    <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-2 lg:gap-4">
+      {images.map((image, index) => (
+        <div key={index} className="relative overflow-hidden h-32 sm:h-48 lg:h-60">
+          <img
+            src={image}
+            alt={`Gallery Image ${index + 1}`}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      ))}
+    </div>
+  </div>
   );
 };
 

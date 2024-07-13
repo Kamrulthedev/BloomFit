@@ -33,7 +33,7 @@ const Comitment = () => {
       <p>
         *Your rate will be 0–30% APR based on credit, and is subject to an
         eligibility check. Payment options through Affirm are provided by
-        these lending partners: 
+        these <br /> lending partners: 
         <Link className="underline" to="https://kamrul-hassan-32b47.web.app/">
           kamrulhassan.com
         </Link>
