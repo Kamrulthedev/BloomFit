@@ -156,7 +156,7 @@ const Navber: React.FC = () => {
         <div className="items-center p-6 text-white flex md:space-x-6 text-lg font-serif">
           <Link
             className="hover:underline hover:transition-transform hover:scale-x-110 cursor-pointer"
-            to=""
+            to="/shop-all"
           >
             SHOP ALL
           </Link>
