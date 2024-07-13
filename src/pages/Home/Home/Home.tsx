@@ -1,8 +1,10 @@
+import Bannar from "../Hero/Bannar";
+
 
 const Home = () => {
     return (
         <div>
-            <h1>Kamrul Hassan</h1>
+            <Bannar></Bannar>
         </div>
     );
 };
