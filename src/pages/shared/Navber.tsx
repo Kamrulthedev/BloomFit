@@ -51,7 +51,7 @@ const Navber: React.FC = () => {
             </button>
 
             <div className="text-white font-bold text-xl ml-4 lg:ml-0">
-              <p className="uppercase font-serif  lg:text-3xl p-3">BloomFit</p>
+             <Link to='/' className="uppercase font-serif  lg:text-3xl p-3">BloomFit</Link>
             </div>
           </div>
 
