@@ -1,7 +1,7 @@
 const Club = () => {
   return (
     <div>
-    <div className="relative w-full h-[300px] lg:h-[450px] mb-10">
+    <div className="relative w-full h-[300px] lg:h-[450px]">
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-5 z-10 flex justify-center lg:my-32 lg:-ml-48 items-center p-4 lg:p-7">
         <div className="w-full max-w-lg bg-white rounded p-4 space-y-3">
           <p className="text-base font-bold text-start">
