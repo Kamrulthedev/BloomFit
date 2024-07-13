@@ -23,28 +23,28 @@ const Bannar = () => {
         <div>
           <img
             className="w-full h-[300px] md:h-[400px] lg:h-[700px]"
-            src="https://i.ibb.co/qyKwgfP/shirtless-bodybuilder-doing-side-plank-exercise-7502-4749.jpg"
+            src="https://i.ibb.co/M9CxVFX/Screenshot-2024-07-13-144418.png"
             alt="Shirtless bodybuilder doing side plank exercise"
           />
         </div>
         <div>
           <img
             className="w-full h-[300px] md:h-[400px] lg:h-[700px]"
-            src="https://i.ibb.co/BzkcYbW/couple-training-together-gym.jpg"
+            src="https://i.ibb.co/34hYMY1/Screenshot-2024-07-13-144443.png"
             alt="Couple training together in gym"
           />
         </div>
         <div>
           <img
             className="w-full h-[300px] md:h-[400px] lg:h-[700px]"
-            src="https://i.ibb.co/zbNBqKG/muscular-man-doing-push-ups-one-hand.jpg"
+            src="https://i.ibb.co/4gGRwjX/Screenshot-2024-07-13-144047.png"
             alt="Muscular man doing push-ups with one hand"
           />
         </div>
         <div>
           <img
             className="w-full h-[300px] md:h-[400px] lg:h-[700px]"
-            src="https://i.ibb.co/xjdV2Mn/young-healthy-man-athlete-doing-exercise-with-ropes-gym-single-male-model-practicing-hard-training-h.jpg"
+            src="https://i.ibb.co/LhLsgBD/Screenshot-2024-07-13-144537.png"
             alt="Young healthy man athlete doing exercise with ropes in gym"
           />
         </div>

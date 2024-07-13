@@ -1,18 +1,25 @@
-
-
 const images = [
-  "https://i.ibb.co/qyKwgfP/shirtless-bodybuilder-doing-side-plank-exercise-7502-4749.jpg",
-  "https://i.ibb.co/BzkcYbW/couple-training-together-gym.jpg",
-  "https://i.ibb.co/zbNBqKG/muscular-man-doing-push-ups-one-hand.jpg",
-  "https://i.ibb.co/xjdV2Mn/young-healthy-man-athlete-doing-exercise-with-ropes-gym-single-male-model-practicing-hard-training-h.jpg"
+  "https://i.ibb.co/fk844qP/john-arano-h4i9-G-de7-Po-unsplash.jpg",
+  "https://i.ibb.co/f4MB2KF/sam-sabourin-Pi-FA6-HIAf-BA-unsplash.jpg",
+  "https://i.ibb.co/341qpJr/toni-g-6-T-6h3-Z39-Ls-unsplash.jpg",
+  "https://i.ibb.co/1G6493b/Screenshot-2024-07-13-145315.png",
+  "https://i.ibb.co/Zmdh1Xr/daniel-apodaca-Wdo-Qio6-HPVA-unsplash.jpg",
+];
+
+const images1 = [
+  "https://i.ibb.co/VBdGsDF/Screenshot-2024-07-13-144505.png",
+  "https://i.ibb.co/cy5c0s4/Screenshot-2024-07-13-143736.png",
+  "https://i.ibb.co/cy5c0s4/Screenshot-2024-07-13-143736.png",
 ];
 
 const ImageGallery = () => {
   return (
     <div className="image-gallery p-8 bg-gray-100">
-      <h2 className="lg:text-3xl font-serif text-center mb-8 uppercase">Gallery</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 h-96 mb-2">
-        {images.slice(0,2).map((image, index) => (
+      <h2 className="lg:text-3xl font-serif text-center mb-8 uppercase">
+        Gallery
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 h-96 mb-2">
+        {images1.slice(0, 2).map((image, index) => (
           <div key={index} className="relative overflow-hidden">
             <img
               src={image}
@@ -22,7 +29,7 @@ const ImageGallery = () => {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2">
         {images.map((image, index) => (
           <div key={index} className="relative overflow-hidden">
             <img
