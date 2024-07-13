@@ -7,6 +7,7 @@ const images = [
 ];
 
 const images1 = [
+  "https://i.ibb.co/Yhf8Rg5/Screenshot-2024-07-13-145608.png",
   "https://i.ibb.co/VBdGsDF/Screenshot-2024-07-13-144505.png",
   "https://i.ibb.co/cy5c0s4/Screenshot-2024-07-13-143736.png",
   "https://i.ibb.co/cy5c0s4/Screenshot-2024-07-13-143736.png",
@@ -19,7 +20,7 @@ const ImageGallery = () => {
         Gallery
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 h-96 mb-2">
-        {images1.slice(0, 2).map((image, index) => (
+        {images1.slice(0, 3).map((image, index) => (
           <div key={index} className="relative overflow-hidden">
             <img
               src={image}
