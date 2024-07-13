@@ -3,43 +3,38 @@ const benefits = [
     id: 1,
     title: "High Quality",
     description:
-      "Our products are made from the highest quality materials to ensure durability and longevity.",
+      "Our products are crafted from the highest quality materials, ensuring exceptional durability and longevity. We meticulously select premium components and employ state-of-the-art manufacturing processes to guarantee that every item meets our rigorous standards. From the initial design phase to the final inspection, we focus on every detail to deliver products that not only meet but exceed customer expectations.",
     image:
-      "https://i.ibb.co/qyKwgfP/shirtless-bodybuilder-doing-side-plank-exercise-7502-4749.jpg",
+      "https://i.ibb.co/6PQ2d4Y/artistic-portrait-shirtless-muscular-male-with-burning-dumbbell.jpg",
   },
   {
     id: 2,
-    title: "Affordable Prices",
-    description: "We offer competitive prices without compromising on quality.",
-    image: "https://i.ibb.co/BzkcYbW/couple-training-together-gym.jpg",
-  },
-  {
-    id: 3,
-    title: "Customer Support",
-    description:
-      "Our dedicated customer support team is here to assist you with any queries.",
-    image: "https://i.ibb.co/zbNBqKG/muscular-man-doing-push-ups-one-hand.jpg",
-  },
+    title: "Customer Satisfaction Guarantee",
+    description: "Your satisfaction is our top priority. We stand behind our products and services with a satisfaction guarantee. If for any reason you are not completely satisfied with your purchase, our customer support team will work diligently to resolve any issues to your satisfaction. Your happiness and loyalty are what drive us to excel every day.",
+    image: "https://i.ibb.co/wQ3HzBk/front-view-fit-man-posing-while-lifting-tank-top.jpg",
+  }
 ];
 const Benefit = () => {
   return (
     <div className="benefits-section p-8 bg-gray-100">
-      <h2 className="text-3xl font-bold text-center mb-8">
-        Benefits of Our Products
+      <h2 className="lg:text-4xl font-serif text-center mb-8 uppercase">
+        Benefits
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {benefits.map((benefit) => (
           <div
             key={benefit.id}
-            className="benefit-card border p-4 rounded-lg shadow-lg bg-white"
+            className="benefit-card border rounded-lg h-96 shadow-lg bg-white flex gap-3"
           >
             <img
               src={benefit.image}
               alt={benefit.title}
-              className="w-full h-48 object-cover rounded-lg mb-4"
+              className="w-1/2 h-full object-cover  mb-4"
             />
-            <h3 className="text-xl font-bold">{benefit.title}</h3>
-            <p className="text-gray-600">{benefit.description}</p>
+            <div className="w-1/2 p-5 space-y-3">
+              <h3 className="text-xl font-bold">{benefit.title}</h3>
+              <p className="text-gray-600">{benefit.description}</p>
+            </div>
           </div>
         ))}
       </div>
