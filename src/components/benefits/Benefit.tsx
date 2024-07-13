@@ -3,7 +3,7 @@ const benefits = [
     id: 1,
     title: "High Quality",
     description:
-      "Our products are crafted from the highest quality materials, ensuring exceptional durability and longevity. We meticulously select premium components and employ state-of-the-art manufacturing processes to guarantee that every item meets our rigorous standards. From the initial design phase to the final inspection.",
+      "Our products are crafted from the highest quality materials, ensuring exceptional durability and longevity. We meticulously select premium components and employ state-of-the-art manufacturing processes to guarantee that every item meets our rigorous standards. From the initial design phase.",
     image:
       "https://i.ibb.co/6PQ2d4Y/artistic-portrait-shirtless-muscular-male-with-burning-dumbbell.jpg",
   },

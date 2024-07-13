@@ -1,5 +1,6 @@
 import Benefit from "@/components/benefits/Benefit";
 import Categorie from "@/components/Categorie/Categorie";
+import Club from "@/components/Club/Club";
 import Comitment from "@/components/Comitment/Comitment";
 import FeaturedProduct from "@/components/FeaturedProducts/FeaturedProduct";
 import Bannar from "@/components/Hero/Bannar";
@@ -15,6 +16,7 @@ const Home = () => {
             <Benefit></Benefit>
             <ImageGallery></ImageGallery>
             <Comitment></Comitment>
+            <Club></Club>
         </div>
     );
 };
