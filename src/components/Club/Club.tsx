@@ -15,7 +15,7 @@ const Club = () => {
                 placeholder="Your e-mail....."
                 className="w-full p-3 border-2 lg:rounded-none"
               />
-              <button className="p-3 bg-green-600 text-white rounded-md">
+              <button className="p-3 bg-green-600 text-white rounded-md transition-transform hover:scale-x-110">
                 SUBSCRIBE
               </button>
             </div>

@@ -13,7 +13,7 @@ const Bannar = () => {
       <h2 className="text-white text-xl md:text-3xl lg:text-6xl font-serif mt-4">
         CLUB SERIES+ <br /> CARDIO EQUIPMENT
       </h2>
-      <button className="mt-6 bg-white text-black font-serif p-2 lg:py-4 px-5">
+      <button className="mt-6 bg-white text-black font-serif p-2 lg:py-4 px-5 transition-transform hover:scale-x-110">
         SHOP NOW
       </button>
     </div>

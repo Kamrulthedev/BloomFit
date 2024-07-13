@@ -71,31 +71,31 @@ const Footer = () => {
             <div className="mt-6 grid grid-cols-4 gap-3">
               <a
                 href="#"
-                className="text-gray-400 border p-4 hover:bg-slate-300 hover:text-black flex justify-center items-center"
+                className="text-gray-400 border p-2 lg:p-4 hover:bg-slate-300 hover:text-black flex justify-center items-center transition-transform hover:scale-x-110"
               >
                 <FaFacebookF />
               </a>
               <a
                 href="#"
-                className="text-gray-400 border p-4 hover:bg-slate-300 hover:text-black flex justify-center items-center"
+                className="text-gray-400 border p-2 lg:p-4 hover:bg-slate-300 hover:text-black flex justify-center items-center transition-transform hover:scale-x-110"
               >
                 <LuInstagram />
               </a>
               <a
                 href="#"
-                className="text-gray-400 border p-4 hover:bg-slate-300 hover:text-black flex justify-center items-center"
+                className="text-gray-400 border p-2 lg:p-4 hover:bg-slate-300 hover:text-black flex justify-center items-center transition-transform hover:scale-x-110"
               >
                 <FaTwitter />
               </a>
               <a
                 href="#"
-                className="text-gray-400 border p-4 hover:bg-slate-300 hover:text-black flex justify-center items-center"
+                className="text-gray-400 border p-2 lg:p-4 hover:bg-slate-300 hover:text-black flex justify-center items-center transition-transform hover:scale-x-110"
               >
                 <FaYoutube />
               </a>
               <a
                 href="#"
-                className="text-gray-400 border p-4 hover:bg-slate-300 hover:text-black flex justify-center items-center"
+                className="text-gray-400 border p-2 lg:p-4 hover:bg-slate-300 hover:text-black flex justify-center items-center transition-transform hover:scale-x-110"
               >
                 <FaLinkedin />
               </a>
