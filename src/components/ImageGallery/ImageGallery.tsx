@@ -15,7 +15,7 @@ const images1 = [
 
 const ImageGallery = () => {
   return (
-    <div className="image-gallery p-8 bg-gray-100 md:h-[300px]">
+    <div className="image-gallery p-8 bg-gray-100 md:h-[750px]">
       <h2 className="lg:text-3xl font-serif text-center mb-8 uppercase">
         Gallery
       </h2>
