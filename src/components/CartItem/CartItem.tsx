@@ -4,9 +4,9 @@ const CartItem = ({ item, onIncrease, onDecrease, onRemove }: any) => {
       <div className="flex items-center justify-between p-4 border-t-2 rounded-lg">
         <div className="flex items-center">
           <img
-            // src={item.image}
+            src={item.image}
             alt={item.name}
-            className="w-16 h-16 object-cover mr-4"
+            className="w-20 h-20 object-cover mr-4 rounded-md transition-transform hover:scale-x-110"
           />
           <div>
             <h3 className="text-lg font-semibold">{item.name}</h3>
