@@ -1,4 +1,6 @@
+
 import MainLayout from "@/components/Layouts/MainLayout";
+import Order from "@/components/Order/Order";
 import ViewDetails from "@/components/ShopAll/ViewDetails";
 import Cart from "@/pages/Cart/Cart";
 import Checkouts from "@/pages/Checkouts/Checkouts";
@@ -27,11 +29,15 @@ const router = createBrowserRouter([
         path: "/cart",
         element: <Cart></Cart>,
       },
+      {
+        path: "/checkouts",
+        element: <Checkouts></Checkouts>,
+      },
     ],
   },
   {
-    path: "/checkouts",
-    element: <Checkouts></Checkouts>,
+    path: "/order-success",
+    element: <Order></Order>,
   },
 ]);
 
