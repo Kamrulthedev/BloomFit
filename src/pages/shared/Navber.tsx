@@ -88,7 +88,7 @@ const Navber: React.FC = () => {
               >
                 <FaShoppingCart />
                 <p className="hidden md:block">$: 00.00</p>
-                <p>(100)</p>
+                <p className="hidden md:block">(100)</p>
               </Link>
             </button>
           </div>
@@ -102,7 +102,7 @@ const Navber: React.FC = () => {
         <div className="flex flex-col items-start text-black text-lg font-serif ">
           <Link
             className="hover:underline cursor-pointer py-2 w-full border-b-2"
-            to=""
+            to="/shop-all"
           >
             SHOP ALL
           </Link>

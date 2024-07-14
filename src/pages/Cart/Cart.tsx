@@ -91,7 +91,7 @@ const Cart = () => {
 
       <div className="grid lg:grid-cols-3 gap-8">
         <div className="col-span-2 p-8">
-          <div className="border-2 border-gray-300 rounded-lg">
+          <div className="border-2 border-gray-300 rounded-lg lg:w-full w-96 lg:h-full">
             <div className="flex justify-between p-5 bg-slate-200 rounded-t-lg border-b-2">
               <p>Product</p>
               <div className="flex gap-14">
