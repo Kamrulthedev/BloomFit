@@ -1,5 +1,5 @@
 
-const Checkout = () => {
+const Checkouts = () => {
     return (
         <div>
             
@@ -7,4 +7,4 @@ const Checkout = () => {
     );
 };
 
-export default Checkout;
+export default Checkouts;
