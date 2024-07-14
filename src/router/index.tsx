@@ -1,4 +1,3 @@
-
 import MainLayout from "@/components/Layouts/MainLayout";
 import ViewDetails from "@/components/ShopAll/ViewDetails";
 import Cart from "@/pages/Cart/Cart";
@@ -8,33 +7,32 @@ import Shop from "@/pages/Shop/Shop";
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <MainLayout></MainLayout>,
-      children:[
-        {
-            path:'/',
-            element:<Home></Home>
-        },
-        {
-          path:'/shop-all',
-          element:<Shop></Shop>
-        },
-        {
-          path:"/details/:id",
-          element:<ViewDetails></ViewDetails>
-        },
-        {
-          path:"/cart",
-          element:<Cart></Cart>
-        },
-        {
-          path:'/checkouts',
-          element:<Checkouts></Checkouts>
-        }
-      ]
-    },
-  ]);
-  
-  export default router;
-  
+  {
+    path: "/",
+    element: <MainLayout></MainLayout>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/shop-all",
+        element: <Shop></Shop>,
+      },
+      {
+        path: "/details/:id",
+        element: <ViewDetails></ViewDetails>,
+      },
+      {
+        path: "/cart",
+        element: <Cart></Cart>,
+      },
+    ],
+  },
+  {
+    path: "/checkouts",
+    element: <Checkouts></Checkouts>,
+  },
+]);
+
+export default router;
