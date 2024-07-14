@@ -83,11 +83,12 @@ const Navber: React.FC = () => {
             </button>
             <button>
               <Link
-                className=" font-bold border-2 p-2 rounded-2xl flex hover:bg-slate-300 bg-white text-black items-center gap-1"
-                to=""
+                className="font-bold hover:border-none hover:text-white border-2 p-2 rounded-2xl flex hover:bg-slate-700 bg-white text-black items-center gap-1"
+                to="all-card"
               >
                 <FaShoppingCart />
                 <p className="hidden md:block">$: 00.00</p>
+                <p>(100)</p>
               </Link>
             </button>
           </div>
