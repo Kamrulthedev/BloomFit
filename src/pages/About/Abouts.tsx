@@ -1,9 +1,10 @@
+import AboutUs from "@/components/AboutUs/AboutUs";
 
 
 const Abouts = () => {
     return (
         <div>
-            <h1>This is About Pagte</h1>
+            <AboutUs></AboutUs>
         </div>
     );
 };
