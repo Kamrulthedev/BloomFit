@@ -56,7 +56,7 @@ const ShopAll = () => {
   };
 
   const handleSubmit = () => {
-    console.log('Selected sort value:', sortValue);
+    console.log("Selected sort value:", sortValue);
     // Perform your sort operation based on the selected value
   };
   return (

@@ -26,7 +26,7 @@ const ProductCard = ({ product }) => {
             From ${product.price.toFixed(2)}
           </p>
         </div>
-        <Link className="p-2 rounded-lg text-lg font-serif bg-green-300" to="/">
+        <Link className="p-2 rounded-lg text-lg font-serif bg-green-300" to="/details">
           view details
         </Link>
       </div>
