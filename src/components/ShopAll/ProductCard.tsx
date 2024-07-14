@@ -1,7 +1,10 @@
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
+
 const ProductCard = ({ product }: any) => {
+
+
   return (
     <div className="rounded-lg overflow-hidden shadow-lg p-2 bg-white">
       <img

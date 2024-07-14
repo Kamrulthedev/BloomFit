@@ -2,7 +2,7 @@ import { useState } from "react";
 import FilterNav from "./FilterNav";
 import ProductCard from "./ProductCard";
 
-const products = [
+export const products = [
   {
     id: 1,
     name: "E3 Elliptical Cross-Trainer",
