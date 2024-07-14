@@ -90,7 +90,7 @@ const Checkout = () => {
                 type="button"
                 onClick={() => handlePaymentMethodChange("cash")}
                 className={`p-2 border rounded ${
-                  paymentMethod === "cash" ? "bg-blue-500 text-white" : ""
+                  paymentMethod === "cash" ? "bg-green-500 text-black" : ""
                 }`}
               >
                 Cash on Delivery
@@ -99,7 +99,7 @@ const Checkout = () => {
                 type="button"
                 onClick={() => handlePaymentMethodChange("stripe")}
                 className={`p-2 border rounded ${
-                  paymentMethod === "stripe" ? "bg-blue-500 text-white" : ""
+                  paymentMethod === "stripe" ? "bg-green-500 text-black" : ""
                 }`}
               >
                 Stripe

@@ -2,6 +2,7 @@
 import MainLayout from "@/components/Layouts/MainLayout";
 import Order from "@/components/Order/Order";
 import ViewDetails from "@/components/ShopAll/ViewDetails";
+import StripePayment from "@/components/StripePayment/StripePayment";
 import Cart from "@/pages/Cart/Cart";
 import Checkouts from "@/pages/Checkouts/Checkouts";
 import Home from "@/pages/Home/Home";
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
     path: "/order-success",
     element: <Order></Order>,
   },
+  {
+    path:'/stripe-payment',
+    element:<StripePayment></StripePayment>
+  }
 ]);
 
 export default router;
