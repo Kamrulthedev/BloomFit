@@ -37,7 +37,7 @@ const Chacout = ({ cartItems }: any) => {
           </Link>
         </label>
       </div>
-      <Link to="/">
+      <Link to="/checkouts">
         <button
           className={`w-full py-2 text-white rounded ${
             inStock && isAgreed ? "bg-black" : "bg-gray-400 cursor-not-allowed"
