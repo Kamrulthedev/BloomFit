@@ -120,9 +120,9 @@ const Navber: React.FC = () => {
           </Link>
           <Link
             className="hover:underline cursor-pointer py-2 w-full border-b-2"
-            to=""
+            to="/about-us"
           >
-            OUTLET
+            ABOUT US
           </Link>
           <Link
             className="hover:underline cursor-pointer py-2 w-full border-b-2"
@@ -175,9 +175,9 @@ const Navber: React.FC = () => {
           </Link>
           <Link
             className="hover:underline hover:transition-transform hover:scale-x-110  cursor-pointer"
-            to=""
+            to="/about-us"
           >
-            OUTLET
+            ABOUT US
           </Link>
           <Link
             className="hover:underline hover:transition-transform hover:scale-x-110  cursor-pointer"

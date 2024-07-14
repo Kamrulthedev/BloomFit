@@ -3,6 +3,7 @@ import MainLayout from "@/components/Layouts/MainLayout";
 import Order from "@/components/Order/Order";
 import ViewDetails from "@/components/ShopAll/ViewDetails";
 import StripePayment from "@/components/StripePayment/StripePayment";
+import Abouts from "@/pages/About/Abouts";
 import Cart from "@/pages/Cart/Cart";
 import Checkouts from "@/pages/Checkouts/Checkouts";
 import Home from "@/pages/Home/Home";
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/checkouts",
         element: <Checkouts></Checkouts>,
+      },
+      {
+        path: "/about-us",
+        element: <Abouts></Abouts>,
       },
     ],
   },

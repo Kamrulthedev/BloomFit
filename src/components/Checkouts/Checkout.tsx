@@ -42,12 +42,12 @@ const Checkout = () => {
           <div className="mb-4">
             <label className="block text-gray-700">Name</label>
             <input
+              required
               type="text"
               name="name"
               value={userInfo.name}
               onChange={handleChange}
               className="w-full p-2 border rounded"
-              required
             />
           </div>
           <div className="mb-4">
@@ -83,14 +83,14 @@ const Checkout = () => {
               required
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-gray-700">Payment Method</label>
+          <div className="mb-6 ">
+            <label className="block mb-4 text-gray-700">Payment Method</label>
             <div className="flex gap-4">
               <button
                 type="button"
                 onClick={() => handlePaymentMethodChange("cash")}
                 className={`p-2 border rounded ${
-                  paymentMethod === "cash" ? "bg-green-500 text-black" : ""
+                  paymentMethod === "cash" ? "bg-green-700 text-white" : ""
                 }`}
               >
                 Cash on Delivery
@@ -99,7 +99,7 @@ const Checkout = () => {
                 type="button"
                 onClick={() => handlePaymentMethodChange("stripe")}
                 className={`p-2 border rounded ${
-                  paymentMethod === "stripe" ? "bg-green-500 text-black" : ""
+                  paymentMethod === "stripe" ? "bg-green-700 text-white" : ""
                 }`}
               >
                 Stripe
@@ -109,7 +109,9 @@ const Checkout = () => {
           <button
             type="button"
             onClick={handlePlaceOrder}
-            className={`w-full p-2 ${paymentMethod ? "bg-green-500 text-black" : ""} bg-black text-white rounded`}
+            className={`w-full p-2 ${
+              paymentMethod ? "bg-primary text-black" : ""
+            } bg-black text-white rounded`}
           >
             Place Order
           </button>
