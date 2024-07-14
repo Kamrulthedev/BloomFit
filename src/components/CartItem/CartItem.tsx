@@ -41,7 +41,7 @@ const CartItem = ({ item, onIncrease, onDecrease, onRemove }: any) => {
             className="lg:px-2 lg:py-1 bg-red-500 text-white rounded ml-4"
           >
             <CiCircleRemove className="lg:hidden" />
-            <p className="hidden md:block"> Remove</p>
+            <p className="md:hidden lg:block hidden"> Remove</p>
           </button>
         </div>
       </div>
