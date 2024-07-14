@@ -15,7 +15,7 @@ const Chacout = ({ cartItems }: any) => {
   };
 
   return (
-    <div className="border-2 p-4 rounded-lg">
+    <div className="border-2 p-4 rounded-lg ">
       <div className="border-b space-y-5 pb-4">
         <h2 className="text-3xl font-serif text-center">Total</h2>
         <p className="text-xl">${total}</p>
