@@ -1,7 +1,7 @@
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product }: any) => {
   return (
     <div className="rounded-lg overflow-hidden shadow-lg p-2 bg-white">
       <img
@@ -26,7 +26,10 @@ const ProductCard = ({ product }) => {
             From ${product.price.toFixed(2)}
           </p>
         </div>
-        <Link className="p-2 rounded-lg text-lg font-serif bg-green-300" to="/details">
+        <Link
+          className="p-2 rounded-lg text-lg font-serif bg-green-300"
+          to={`/details/${product.id}`}
+        >
           view details
         </Link>
       </div>
