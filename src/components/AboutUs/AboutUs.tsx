@@ -10,7 +10,7 @@ const AboutUs = () => {
           <img
             src="https://i.ibb.co/3rdMJrC/ddd-1.png"
             alt="Company Overview"
-            className="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0 md:mr-6"
+            className="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0 md:mr-6 transition-transform hover:scale-x-110"
           />
           <div>
             <h2 className="text-2xl font-semibold mb-4">Company Overview</h2>
@@ -28,7 +28,7 @@ const AboutUs = () => {
           <img
             src="https://i.ibb.co/s6Wt1q9/word-weekly-fitness-class-with-dumbbells-sitting-exercise-balls-against-hexagon-1134-80826-1.jpg"
             alt="Our Mission"
-            className="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0 md:ml-6"
+            className="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0 md:ml-6 transition-transform hover:scale-x-110"
           />
           <div>
             <h2 className="text-2xl font-semibold mb-4">Mission</h2>
@@ -44,7 +44,7 @@ const AboutUs = () => {
           <img
             src="https://i.ibb.co/FHRtVMV/crazy-sports-man-funny-expression-1194-3471-1.png"
             alt="Our Vision"
-            className="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0 md:mr-6"
+            className="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0 md:mr-6 transition-transform hover:scale-x-110"
           />
           <div>
             <h2 className="text-2xl font-semibold mb-4">Vision</h2>
@@ -66,7 +66,7 @@ const AboutUs = () => {
               <img
                 src="https://i.ibb.co/FKPhP8d/strength-beard-headphone-power-athlete-1368-2583.png"
                 alt="Team Member"
-                className="w-full rounded-lg shadow-lg mb-2 h-96 object-cover"
+                className="w-full rounded-lg shadow-lg mb-2 h-96 object-cover transition-transform hover:scale-x-110"
               />
               <h3 className="text-xl font-semibold mb-2">John Doe</h3>
               <p className="text-gray-700">Founder & CEO</p>
@@ -81,7 +81,7 @@ const AboutUs = () => {
               <img
                 src="https://i.ibb.co/WHH1Lxs/portrait-happy-smiling-cheerful-support-phone-operator-headset-isolated-white-wall-231208-9600-1.jpg"
                 alt="Team Member"
-                className="w-full rounded-lg shadow-lg mb-2 h-96 object-cover"
+                className="w-full rounded-lg shadow-lg mb-2 h-96 object-cover transition-transform hover:scale-x-110"
               />
               <h3 className="text-xl font-semibold mb-2">Hiade Oread</h3>
               <p className="text-gray-700">COO & Teatuse</p>
@@ -95,7 +95,7 @@ const AboutUs = () => {
               <img
                 src="https://i.ibb.co/p2y1Hkr/fitness-instructor-leading-group-workout-class-white-background-994764-5293.png"
                 alt="Team Member"
-                className="w-full rounded-lg shadow-lg mb-2 h-96 object-cover"
+                className="w-full rounded-lg shadow-lg mb-2 h-96 object-cover transition-transform hover:scale-x-110"
               />
               <h3 className="text-xl font-semibold mb-2">Jane Smith</h3>
               <p className="text-gray-700">Head of Operations</p>
