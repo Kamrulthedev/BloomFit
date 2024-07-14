@@ -9,25 +9,27 @@ const ProductCard = ({ product }) => {
         src={product.image}
         alt={"Images"}
       />
-      <div className="px-6 py-4 space-y-2">
-        <div className="font-bold text-xl mb-2">{product.name}</div>
-        <div className="flex items-center">
-          {Array.from({ length: 8 }, (_, index) =>
-            index ? (
-              <AiOutlineStar key={index} className="text-yellow-400" />
-            ) : (
-              <AiFillStar key={index} className="text-yellow-400" />
-            )
-          )}
-          <span className="text-gray-600 ml-2">({product.reviews})</span>
+      <div className="px-6 py-4 space-y-2 flex justify-between items-center">
+        <div>
+          <div className="font-bold text-xl mb-2">{product.name}</div>
+          <div className="flex items-center">
+            {Array.from({ length: 8 }, (_, index) =>
+              index ? (
+                <AiOutlineStar key={index} className="text-yellow-400" />
+              ) : (
+                <AiFillStar key={index} className="text-yellow-400" />
+              )
+            )}
+            <span className="text-gray-600 ml-2">({product.reviews})</span>
+          </div>
+          <p className="text-gray-700 text-base">
+            From ${product.price.toFixed(2)}
+          </p>
         </div>
-        <p className="text-gray-700 text-base">
-          From ${product.price.toFixed(2)}
-        </p>
-      </div>
-      <Link className="p-2" to="/">
+        <Link className="p-2 rounded-lg text-lg font-serif bg-green-300" to="/">
           view details
         </Link>
+      </div>
     </div>
   );
 };
