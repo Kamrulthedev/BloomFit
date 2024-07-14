@@ -1,6 +1,7 @@
 
 import MainLayout from "@/components/Layouts/MainLayout";
 import ViewDetails from "@/components/ShopAll/ViewDetails";
+import Cart from "@/pages/Cart/Cart";
 import Home from "@/pages/Home/Home";
 import Shop from "@/pages/Shop/Shop";
 import { createBrowserRouter } from "react-router-dom";
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
         {
           path:"/details/:id",
           element:<ViewDetails></ViewDetails>
+        },
+        {
+          path:"/cart",
+          element:<Cart></Cart>
         }
       ]
     },
