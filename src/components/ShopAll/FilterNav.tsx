@@ -1,13 +1,15 @@
-import { useState } from "react";
+
 
 const FilterNav = () => {
-  const [isAvailabilityOpen, setAvailabilityOpen] = useState(true);
+  const [isAvailabilityOpen, setAvailabilityOpen] = useState(false);
   const [isPriceOpen, setPriceOpen] = useState(false);
   const [isCategoryOpen, setCategoryOpen] = useState(false);
-
   const [isbrandOpen, setbrandOpen] = useState(false);
+
   return (
-    <div className="w-full  p-4 border-r border-gray-300">
+    <div
+      className={`w-full p-4 border-r border-gray-300`}
+    >
       <h2 className="font-serif text-lg mb-4">FILTERS</h2>
       <hr className="mb-4" />
 

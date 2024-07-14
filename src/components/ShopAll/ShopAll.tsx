@@ -59,8 +59,8 @@ const ShopAll = () => {
           {/* Content for the second div */}
           <div className="flex justify-between">
             <h1>50 Products</h1>
-            <form className="flex items-center">
-              <p className="text-slate-500">Sort by</p>
+            <form className="flex items-center gap-1">
+              <p className="text-slate-600">Sort by</p>
               <select
                 id="sort"
                 name="sort"
