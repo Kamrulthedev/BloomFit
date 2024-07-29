@@ -51,7 +51,7 @@ const Navber: React.FC = () => {
             </button>
 
             <div className="text-white font-bold text-xl ml-4 lg:ml-0">
-              <Link to="/" className="uppercase font-serif  lg:text-3xl p-3">
+              <Link to="/" className="uppercase font-serif lg:text-3xl p-3 ">
                 BloomFit
               </Link>
             </div>
@@ -59,7 +59,7 @@ const Navber: React.FC = () => {
 
           <div className="flex items-center gap-4">
             {/* Search Bar */}
-            <div className="mt-4 lg:mt-0 hover:border-2 hover:rounded-full ">
+            <div className="mt-4 lg:mt-0 hover:border hover:rounded-full ">
               <div className="relative w-full lg:w-80 ">
                 <input
                   type="text"
