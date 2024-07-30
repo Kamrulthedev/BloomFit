@@ -29,6 +29,10 @@ const Navber: React.FC = () => {
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav>
       {/* scroll down navber */}
@@ -101,42 +105,49 @@ const Navber: React.FC = () => {
       >
         <div className="flex flex-col items-start text-black text-lg font-serif ">
           <Link
+            onClick={toggleMenu}
             className="hover:underline cursor-pointer py-2 w-full border-b-2"
             to="/shop-all"
           >
             SHOP ALL
           </Link>
           <Link
+            onClick={toggleMenu}
             className="hover:underline cursor-pointer py-2 w-full border-b-2"
             to=""
           >
             STRENGTH
           </Link>
           <Link
+            onClick={toggleMenu}
             className="hover:underline cursor-pointer py-2 w-full border-b-2"
             to=""
           >
             ACCESSORIES
           </Link>
           <Link
+            onClick={toggleMenu}
             className="hover:underline cursor-pointer py-2 w-full border-b-2"
             to="/about-us"
           >
             ABOUT US
           </Link>
           <Link
+            onClick={toggleMenu}
             className="hover:underline cursor-pointer py-2 w-full border-b-2"
             to=""
           >
             TOOLS
           </Link>
           <Link
+            onClick={toggleMenu}
             className="hover:underline cursor-pointer py-2 w-full border-b-2"
             to=""
           >
             FOR FACILITY
           </Link>
           <Link
+            onClick={toggleMenu}
             to=""
             className="relative cursor-pointer flex border-b-2 gap-2 items-center hover:border p-2 rounded-full"
           >
