@@ -44,7 +44,7 @@ const ImageGallery = () => {
               <img
                 src={image}
                 alt={`Gallery Image ${index + 1}`}
-                className="w-full  object-cover hover:scale-x-110 transition-transform"
+                className="w-full lg:h-full md:h-[310px] object-cover hover:scale-x-110 transition-transform"
                 loading="lazy"
               />
             </div>
@@ -52,7 +52,7 @@ const ImageGallery = () => {
         </div>
         {/* second div */}
         <div>
-          <div className="grid grid-cols-2 lg:grid-cols-2 gap-4 mb-2">
+        <div className="grid md:grid-cols-2 grid-cols-2 lg:grid-cols-2 gap-2 mb-2 lg:h-[184px]">
             {images1.slice(0, 2).map((image, index) => (
               <div
                 key={index}
@@ -67,7 +67,7 @@ const ImageGallery = () => {
               </div>
             ))}
           </div>
-          <div className="grid md:grid-cols-2 grid-cols-2 lg:grid-cols-2 gap-2">
+          <div className="grid md:grid-cols-2 grid-cols-2 lg:grid-cols-2 gap-2 lg:h-[184px]">
             {images.map((image, index) => (
               <div key={index} className="relative overflow-hidden">
                 <img

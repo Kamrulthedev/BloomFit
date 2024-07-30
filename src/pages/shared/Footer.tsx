@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className="bg-gray-900 text-gray-400 px-3 lg:px-5 py-16 lg:py-24">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Links */}
           <div>
             <h6 className="text-white font-serif mb-4">COMPANY LINKS</h6>
@@ -104,10 +104,10 @@ const Footer = () => {
 
           {/* Bloom Shop */}
           <div>
-            <button className="flex items-center gap-3 text-base font-bold text-white">
+            <Link to='/' className="flex items-center gap-3 text-base font-bold text-white">
               <h1>Bloom Shop</h1>
               <FaArrowsUpDown />
-            </button>
+            </Link>
           </div>
         </div>
       </div>
