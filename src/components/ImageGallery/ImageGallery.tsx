@@ -43,7 +43,7 @@ const ImageGallery = () => {
             >
               <img
                 src={image}
-                alt={`Gallery Image ${index + 1}`}
+                alt={`Gallery Image ${index + 1}` }
                 className="w-full lg:h-full md:h-[310px] object-cover hover:scale-x-110 transition-transform"
                 loading="lazy"
               />

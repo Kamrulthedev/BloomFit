@@ -17,7 +17,7 @@ const FeaturedProduct = () => {
           </p>
           <Link
             to="/"
-            className="bg-green-500 p-1 md:p-2 lg:p-4 rounded-sm text-xs md:text-base lg:text-xl font-serif"
+            className="bg-green-500 p-1 md:p-2 lg:p-4 rounded-sm text-xs md:text-base lg:text-xl font-serif transition-transform hover:scale-x-110"
           >
             LEARN MORE
           </Link>

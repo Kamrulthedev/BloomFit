@@ -52,7 +52,10 @@ const ShopAll = () => {
   const [sortedProducts, setSortedProducts] = useState(products);
 
   useEffect(() => {
-    handleSortChange({ target: { value: sortValue } });
+    const event = {
+      target: { value: sortValue } as EventTarget & HTMLSelectElement,
+    };
+    handleSortChange(event as React.ChangeEvent<HTMLSelectElement>);
   }, [products]);
 
   const handleSortChange = (e : React.ChangeEvent<HTMLSelectElement>) => {
@@ -61,7 +64,7 @@ const ShopAll = () => {
     handleSubmit(value);
   };
 
-  const handleSubmit = (sortValue : any) => {
+  const handleSubmit = (sortValue: any) => {
     console.log(sortValue)
     let sorted = [...products];
     if(sortValue === 'all-products'){
