@@ -19,7 +19,7 @@ const ImageGallery = () => {
   const [visible, setVisible] = useState(false);
 
   const props = useSpring({
-    opacity: visible ? 12 : 8,
+    opacity: visible ? 1 : 0,
     transform: visible ? "translateY(0)" : "translateY(20px)",
     from: { opacity: 0, transform: "translateY(20px)" },
   });
@@ -27,53 +27,45 @@ const ImageGallery = () => {
   useEffect(() => {
     setVisible(true);
   }, []);
+
   return (
     <animated.div style={props} className="image-gallery p-8 bg-gray-100">
-      <h2 className="lg:text-3xl font-serif text-center mb-8 uppercase">
-        Gallery
-      </h2>
-
-      <div className="grid grid-cols-2 gap-2">
-        {/* first div */}
-        <div>
+      <h2 className="text-3xl font-serif text-center mb-8 uppercase">Gallery</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+        {/* First column */}
+        <div className="w-full">
           {images1.slice(2, 3).map((image, index) => (
-            <div
-              key={index}
-              className="relative md:overflow-auto lg:overflow-hidden"
-            >
+            <div key={index} className="relative overflow-hidden">
               <img
                 src={image}
-                alt={`Gallery Image ${index + 1}` }
-                className="w-full lg:h-full md:h-[310px] object-cover hover:scale-x-110 transition-transform"
+                alt={`Gallery Image ${index + 1}`}
+                className="w-full h-auto object-cover hover:scale-110 transition-transform"
                 loading="lazy"
               />
             </div>
           ))}
         </div>
-        {/* second div */}
-        <div>
-        <div className="grid md:grid-cols-2 grid-cols-2 lg:grid-cols-2 gap-2 mb-2 lg:h-[184px]">
+        {/* Second column */}
+        <div className="grid grid-cols-2 gap-2">
+          <div className="col-span-2 grid grid-cols-2 gap-2">
             {images1.slice(0, 2).map((image, index) => (
-              <div
-                key={index}
-                className="relative md:overflow-auto lg:overflow-hidden"
-              >
+              <div key={index} className="relative overflow-hidden">
                 <img
                   src={image}
                   alt={`Gallery Image ${index + 1}`}
-                  className="w-full h-full object-cover hover:scale-x-110 transition-transform"
+                  className="w-full h-full object-cover hover:scale-110 transition-transform"
                   loading="lazy"
                 />
               </div>
             ))}
           </div>
-          <div className="grid md:grid-cols-2 grid-cols-2 lg:grid-cols-2 gap-2 lg:h-[184px]">
+          <div className="col-span-2 grid grid-cols-2 gap-2">
             {images.map((image, index) => (
               <div key={index} className="relative overflow-hidden">
                 <img
                   src={image}
                   alt={`Gallery Image ${index + 1}`}
-                  className="w-full h-full object-cover hover:scale-x-105 transition-transform"
+                  className="w-full h-full object-cover hover:scale-110 transition-transform"
                   loading="lazy"
                 />
               </div>
