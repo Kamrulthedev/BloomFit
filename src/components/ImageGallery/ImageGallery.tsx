@@ -35,11 +35,11 @@ const ImageGallery = () => {
         {/* First column */}
         <div className="w-full">
           {images1.slice(2, 3).map((image, index) => (
-            <div key={index} className="relative overflow-hidden">
+            <div key={index} className="relative overflow-hidden h-[400px]">
               <img
                 src={image}
                 alt={`Gallery Image ${index + 1}`}
-                className="w-full h-auto object-cover hover:scale-110 transition-transform"
+                className="w-full h-full object-cover hover:scale-110 transition-transform"
                 loading="lazy"
               />
             </div>
@@ -49,7 +49,7 @@ const ImageGallery = () => {
         <div className="grid grid-cols-2 gap-2">
           <div className="col-span-2 grid grid-cols-2 gap-2">
             {images1.slice(0, 2).map((image, index) => (
-              <div key={index} className="relative overflow-hidden">
+              <div key={index} className="relative overflow-hidden h-[200px]">
                 <img
                   src={image}
                   alt={`Gallery Image ${index + 1}`}
@@ -61,7 +61,7 @@ const ImageGallery = () => {
           </div>
           <div className="col-span-2 grid grid-cols-2 gap-2">
             {images.map((image, index) => (
-              <div key={index} className="relative overflow-hidden">
+              <div key={index} className="relative overflow-hidden h-[200px]">
                 <img
                   src={image}
                   alt={`Gallery Image ${index + 1}`}
