@@ -83,7 +83,7 @@ const ShopAll = () => {
       <h1 className="text-3xl font-serif text-center p-6 lg:p-16">All SHOP</h1>
 
       <div className="grid grid-cols-4 gap-4">
-        <div className="col-span-1 lg:h-[500px]">
+        <div className="col-span-1 lg:h-[500px] sticky top-5 left-0">
           {/* Content for the first div */}
           <FilterNav></FilterNav>
         </div>

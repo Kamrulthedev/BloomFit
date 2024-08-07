@@ -41,7 +41,7 @@ const router = createBrowserRouter([
         element: <Abouts></Abouts>,
       },
       {
-        path: '/productmanagement',
+        path: '/product-management',
         element:<ProductManagement></ProductManagement>
       }
     ],

@@ -147,7 +147,7 @@ const Navber: React.FC = () => {
           </Link>
           <Link
             onClick={toggleMenu}
-            to='/productmanagement'
+            to='/product-management'
             className="relative cursor-pointer flex border-b-2 gap-2 items-center hover:border p-2 rounded-full"
           >
             <p className="text-lg">
@@ -204,7 +204,7 @@ const Navber: React.FC = () => {
         </div>
         <div className="flex items-center mt-2 md:mt-0 gap-10 text-white p-4">
           <Link
-            to='/productmanagement'
+            to='/product-management'
             className="relative cursor-pointer flex gap-2 items-center hover:border p-2 rounded-full"
           >
             <p className="text-lg">
