@@ -40,6 +40,10 @@ const router = createBrowserRouter([
         path: "/about-us",
         element: <Abouts></Abouts>,
       },
+      {
+        path: '/productmanagement',
+        element:<ProductManagement></ProductManagement>
+      }
     ],
   },
   {
@@ -50,10 +54,7 @@ const router = createBrowserRouter([
     path:'/stripe-payment',
     element:<StripePayment></StripePayment>
   },
-  {
-    path: '/productmanagement',
-    element:<ProductManagement></ProductManagement>
-  }
+
 ]);
 
 export default router;
