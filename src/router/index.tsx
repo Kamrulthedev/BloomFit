@@ -7,6 +7,7 @@ import Abouts from "@/pages/About/Abouts";
 import Cart from "@/pages/Cart/Cart";
 import Checkouts from "@/pages/Checkouts/Checkouts";
 import Home from "@/pages/Home/Home";
+import ProductManagement from "@/pages/Product Management/ProductManagement";
 import Shop from "@/pages/Shop/Shop";
 import { createBrowserRouter } from "react-router-dom";
 
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path:'/stripe-payment',
     element:<StripePayment></StripePayment>
+  },
+  {
+    path: '/productmanagement',
+    element:<ProductManagement></ProductManagement>
   }
 ]);
 

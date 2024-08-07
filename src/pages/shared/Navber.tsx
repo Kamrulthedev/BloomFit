@@ -7,7 +7,7 @@ import {
   FaTimes,
   FaUser,
 } from "react-icons/fa";
-import { LuBus } from "react-icons/lu";
+import { AiOutlineProduct } from "react-icons/ai";
 
 const Navber: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +43,6 @@ const Navber: React.FC = () => {
       >
         BUILD YOUR DREAM HOME GYM
       </div>
-
       <div className="container mx-auto bg-black p-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
@@ -148,13 +147,13 @@ const Navber: React.FC = () => {
           </Link>
           <Link
             onClick={toggleMenu}
-            to=""
+            to='/productmanagement'
             className="relative cursor-pointer flex border-b-2 gap-2 items-center hover:border p-2 rounded-full"
           >
             <p className="text-lg">
-              <LuBus />
+              <AiOutlineProduct />
             </p>
-            <h1 className="font-serif text-base">Fast Shipping</h1>
+            <h1 className="font-serif text-base">Product Management</h1>
           </Link>
         </div>
       </div>
@@ -205,13 +204,13 @@ const Navber: React.FC = () => {
         </div>
         <div className="flex items-center mt-2 md:mt-0 gap-10 text-white p-4">
           <Link
-            to=""
+            to='/productmanagement'
             className="relative cursor-pointer flex gap-2 items-center hover:border p-2 rounded-full"
           >
             <p className="text-lg">
-              <LuBus className="text-xl font-bold" />
+              <AiOutlineProduct className="text-xl font-bold" />
             </p>
-            <h1 className="font-serif text-base">Fast Shipping</h1>
+            <h1 className="font-serif text-base">Product Management</h1>
           </Link>
         </div>
       </div>
