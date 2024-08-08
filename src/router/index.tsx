@@ -1,4 +1,3 @@
-
 import MainLayout from "@/components/Layouts/MainLayout";
 import Order from "@/components/Order/Order";
 import ViewDetails from "@/components/ShopAll/ViewDetails";
@@ -40,10 +39,6 @@ const router = createBrowserRouter([
         path: "/about-us",
         element: <Abouts></Abouts>,
       },
-      {
-        path: '/product-management',
-        element:<ProductManagement></ProductManagement>
-      }
     ],
   },
   {
@@ -51,10 +46,21 @@ const router = createBrowserRouter([
     element: <Order></Order>,
   },
   {
-    path:'/stripe-payment',
-    element:<StripePayment></StripePayment>
+    path: "/stripe-payment",
+    element: <StripePayment></StripePayment>,
   },
-
+  {
+    path: "/product-management",
+    element: <ProductManagement></ProductManagement>,
+    children:[
+      {
+        path: '/product-management/create',
+      },
+      {
+        path: '/product-management/list',
+      }
+    ]
+  },
 ]);
 
 export default router;
