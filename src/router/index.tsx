@@ -1,5 +1,7 @@
 import MainLayout from "@/components/Layouts/MainLayout";
 import Order from "@/components/Order/Order";
+import CreateProduct from "@/components/ProductManagment/CreateProduct/CreateProduct";
+import ProductList from "@/components/ProductManagment/ProductList/ProductList";
 import ViewDetails from "@/components/ShopAll/ViewDetails";
 import StripePayment from "@/components/StripePayment/StripePayment";
 import Abouts from "@/pages/About/Abouts";
@@ -55,9 +57,11 @@ const router = createBrowserRouter([
     children:[
       {
         path: '/product-management/create',
+        element:<CreateProduct></CreateProduct>
       },
       {
         path: '/product-management/list',
+        element:<ProductList></ProductList>
       }
     ]
   },

@@ -10,10 +10,16 @@ import Navber from "../shared/Navber";
 const ProductManagement = () => {
   return (
     <div>
-      <Navber></Navber>
-      <Layout style={{ height: "100%" }}>
+      <Navber />
+      <Layout style={{ minHeight: "100vh" }}>
         <Sider
-          style={{ height: "100vh", position: "sticky", top: 0, left: 0 }}
+          style={{
+            height: "100vh",
+            position: "sticky", // Use fixed instead of sticky for more consistent behavior
+            left: 0,
+            top: 0,
+            zIndex: 1, // Ensure it's above other content
+          }}
           breakpoint="lg"
           collapsedWidth="0"
           onBreakpoint={(broken) => {
@@ -35,7 +41,7 @@ const ProductManagement = () => {
           >
             <h1 className="uppercase">Product Management</h1>
           </div>
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
+          <Menu theme="dark" mode="inline">
             <Menu.Item key="1" icon={<MdCreateNewFolder />}>
               <Link to="/product-management/create">Create a New Product</Link>
             </Menu.Item>
@@ -44,19 +50,14 @@ const ProductManagement = () => {
             </Menu.Item>
           </Menu>
         </Sider>
-        <Layout>
-          <Content style={{ margin: "24px 16px 0", position: "sticky" }}>
-            <div
-              style={{
-                padding: 24,
-                minHeight: 360,
-              }}
-            ></div>
-            <Outlet></Outlet>
+
+        <Layout style={{ marginLeft: 100 }}> {/* Adjust marginLeft to account for fixed Sider */}
+          <Content style={{ margin: "24px 16px 0", padding: 12 }}>
+            <Outlet /> {/* Content should now appear directly under the header */}
           </Content>
         </Layout>
       </Layout>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 };
