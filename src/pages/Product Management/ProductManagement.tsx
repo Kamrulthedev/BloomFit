@@ -47,10 +47,10 @@ const ProductManagement = () => {
             mode="inline"
             style={{ backgroundColor: "rgb(15 23 42)" }}
           >
-            <Menu.Item key="2" icon={<GrUnorderedList />}>
+            <Menu.Item key="1" icon={<GrUnorderedList />}>
               <Link to="/product-management/list">Product List</Link>
             </Menu.Item>
-            <Menu.Item key="1" icon={<MdCreateNewFolder />}>
+            <Menu.Item key="2" icon={<MdCreateNewFolder />}>
               <Link to="/product-management/create">Create a New Product</Link>
             </Menu.Item>
           </Menu>

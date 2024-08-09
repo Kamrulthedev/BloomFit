@@ -60,6 +60,30 @@ const products = [
     category: "Strength Training",
     actions: ["Add to Cart", "View Details"],
   },
+  {
+    name: "Pull-Up Bar",
+    price: 40,
+    category: "Strength Training",
+    actions: ["Add to Cart", "View Details"],
+  },
+  {
+    name: "Medicine Ball",
+    price: 50,
+    category: "Strength Training",
+    actions: ["Add to Cart", "View Details"],
+  },
+  {
+    name: "Pull-Up Bar",
+    price: 40,
+    category: "Strength Training",
+    actions: ["Add to Cart", "View Details"],
+  },
+  {
+    name: "Medicine Ball",
+    price: 50,
+    category: "Strength Training",
+    actions: ["Add to Cart", "View Details"],
+  },
 ];
 
 const ProductList = () => {
