@@ -55,7 +55,7 @@ const ProductManagement = () => {
             </Menu.Item>
           </Menu>
         </Sider>
-        <Layout style={{ marginLeft: 100 }}>
+        <Layout style={{ marginLeft: 10 }}>
           {/* Adjust marginLeft to account for fixed Sider */}
           <Content style={{ margin: "24px 16px 0", padding: 12 }}>
             <Outlet />
