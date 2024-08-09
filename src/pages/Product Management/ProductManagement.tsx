@@ -19,7 +19,7 @@ const ProductManagement = () => {
             left: 0,
             top: 0,
             zIndex: 1, // Ensure it's above other content
-            backgroundColor: "rgb(15 23 42)", 
+            backgroundColor: "rgb(15 23 42)",
           }}
           breakpoint="lg"
           collapsedWidth="0"
@@ -42,12 +42,16 @@ const ProductManagement = () => {
           >
             <h1 className="uppercase">Product Management</h1>
           </div>
-          <Menu theme="dark" mode="inline"  style={{ backgroundColor: "rgb(15 23 42)"}}>
-            <Menu.Item key="1" icon={<MdCreateNewFolder />}>
-              <Link to="/product-management/create">Create a New Product</Link>
-            </Menu.Item>
+          <Menu
+            theme="dark"
+            mode="inline"
+            style={{ backgroundColor: "rgb(15 23 42)" }}
+          >
             <Menu.Item key="2" icon={<GrUnorderedList />}>
               <Link to="/product-management/list">Product List</Link>
+            </Menu.Item>
+            <Menu.Item key="1" icon={<MdCreateNewFolder />}>
+              <Link to="/product-management/create">Create a New Product</Link>
             </Menu.Item>
           </Menu>
         </Sider>
