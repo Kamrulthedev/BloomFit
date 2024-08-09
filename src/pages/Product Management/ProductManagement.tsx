@@ -50,10 +50,12 @@ const ProductManagement = () => {
             </Menu.Item>
           </Menu>
         </Sider>
-
-        <Layout style={{ marginLeft: 100 }}> {/* Adjust marginLeft to account for fixed Sider */}
+        <Layout style={{ marginLeft: 100 }}>
+          {" "}
+          {/* Adjust marginLeft to account for fixed Sider */}
           <Content style={{ margin: "24px 16px 0", padding: 12 }}>
-            <Outlet /> {/* Content should now appear directly under the header */}
+            <Outlet />{" "}
+            {/* Content should now appear directly under the header */}
           </Content>
         </Layout>
       </Layout>
