@@ -54,16 +54,16 @@ const router = createBrowserRouter([
   {
     path: "/product-management",
     element: <ProductManagement></ProductManagement>,
-    children:[
+    children: [
       {
-        path: '/product-management/create',
-        element:<CreateProduct></CreateProduct>
+        path: "/product-management/create",
+        element: <CreateProduct></CreateProduct>,
       },
       {
-        path: '/product-management/list',
-        element:<ProductList></ProductList>
+        path: "/product-management/list",
+        element: <ProductList></ProductList>,
       }
-    ]
+    ],
   },
 ]);
 

@@ -19,6 +19,7 @@ const ProductManagement = () => {
             left: 0,
             top: 0,
             zIndex: 1, // Ensure it's above other content
+            backgroundColor: "rgb(15 23 42)", 
           }}
           breakpoint="lg"
           collapsedWidth="0"
@@ -41,7 +42,7 @@ const ProductManagement = () => {
           >
             <h1 className="uppercase">Product Management</h1>
           </div>
-          <Menu theme="dark" mode="inline">
+          <Menu theme="dark" mode="inline"  style={{ backgroundColor: "rgb(15 23 42)"}}>
             <Menu.Item key="1" icon={<MdCreateNewFolder />}>
               <Link to="/product-management/create">Create a New Product</Link>
             </Menu.Item>
@@ -51,10 +52,9 @@ const ProductManagement = () => {
           </Menu>
         </Sider>
         <Layout style={{ marginLeft: 100 }}>
-          {" "}
           {/* Adjust marginLeft to account for fixed Sider */}
           <Content style={{ margin: "24px 16px 0", padding: 12 }}>
-            <Outlet />{" "}
+            <Outlet />
             {/* Content should now appear directly under the header */}
           </Content>
         </Layout>

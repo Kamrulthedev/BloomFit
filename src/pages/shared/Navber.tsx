@@ -43,7 +43,7 @@ const Navber: React.FC = () => {
       >
         BUILD YOUR DREAM HOME GYM
       </div>
-      <div className="container mx-auto bg-black p-4">
+      <div className="container mx-auto bg-slate-900 p-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <button
@@ -67,7 +67,7 @@ const Navber: React.FC = () => {
                 <input
                   type="text"
                   placeholder="Search..."
-                  className="rounded-full w-20 px-4 py-2 p-3 bg-gray-800 text-white placeholder-gray-400 focus:outline-none lg:w-80"
+                  className="rounded-full w-20 px-4 py-2 p-3 bg-slate-800 text-white placeholder-gray-400 focus:outline-none lg:w-80"
                 />
                 <button onClick={() => setIsShow(!isShow)}>
                   <FaSearch className="absolute top-1/2 right-3 hidden sm:block md:block transform -translate-y-1/2 text-gray-400" />
@@ -160,7 +160,7 @@ const Navber: React.FC = () => {
 
       {/* Fixed Navbar */}
       <div
-        className={`bg-gray-950 flex justify-between hidden lg:flex ${
+        className={`bg-slate-900 flex justify-between hidden lg:flex ${
           isScrolled ? "fixed w-full top-0 left-0 z-40" : ""
         }`}
       >
