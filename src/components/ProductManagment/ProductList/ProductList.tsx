@@ -1,3 +1,7 @@
+import { useState } from "react";
+import EditProductModal from "./EditProductModal";
+import Swal from "sweetalert2";
+
 const products = [
   {
     id: 1,
@@ -87,6 +91,43 @@ const products = [
 ];
 
 const ProductList = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const handleEdit = (product: any) => {
+    setIsModalOpen(true);
+    console.log("update product");
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProduct(null);
+  };
+
+  const handleDelete = (id) => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        //   // Dispatch the action to delete the product
+        //   dispatch(deleteProduct(id));
+
+        //   swal.fire(
+        //     "Deleted!",
+        //     "Your product has been deleted.",
+        //     "success"
+        //   );
+        console.log("delete product ");
+      }
+    });
+  };
+
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-semibold mb-4">Product List</h1>
@@ -121,10 +162,16 @@ const ProductList = () => {
                   {product.category}
                 </td>
                 <td className="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                  <button className="text-blue-600 hover:text-blue-900 mr-4">
+                  <button
+                    className="text-blue-600 hover:text-blue-900 mr-4"
+                    onClick={() => handleEdit(product)}
+                  >
                     Edit
                   </button>
-                  <button className="text-red-600 hover:text-red-900">
+                  <button
+                    className="text-red-600 hover:text-red-900"
+                    onClick={() => handleDelete(product.id)}
+                  >
                     Delete
                   </button>
                 </td>
@@ -133,6 +180,13 @@ const ProductList = () => {
           </tbody>
         </table>
       </div>
+      {isModalOpen && (
+        <EditProductModal
+          product={products}
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+        />
+      )}
     </div>
   );
 };
