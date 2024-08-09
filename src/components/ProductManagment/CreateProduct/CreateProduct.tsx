@@ -15,12 +15,11 @@ const CreateProduct = () => {
       ...productData,
       [e.target.name]: e.target.value,
     });
-
-    console.log(e)
   };
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
+    console.log(productData)
     // dispatch(createProduct(productData));
     // navigate("/product-management/list");
   };

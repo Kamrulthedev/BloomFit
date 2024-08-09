@@ -1,5 +1,5 @@
 
-const EditProductModal = ({ product, isOpen, onClose }) => {
+const EditProductModal = ({ product, isOpen, onClose }: any) => {
 
   if (!isOpen) return null;
 
